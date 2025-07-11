@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!-- text是文本框，用户可以输入任何文字 -->
+        用户名：<input type="text" name="username" value="请输入用户名"><br>
+        <!-- password密码框，用户看不到输入的数字 -->
+         <!-- maxlenght限定表单输入的最大字数 -->
+        密码：<input type="password" password="pwd" maxlength="6"><br>
+        <!-- radio是单选按钮 -->
+        <!-- name是表单元素的名字这里性别单选按钮必须有相同的名字才能实现多选一 -->
+         <!-- 单选按钮和复选按钮都可以设置checked属性，当页面打开的时候就可以默认选中这个按钮 -->
+        性别：男<input type="radio" name="sex" value="男" checked="checked"> 女 <input type="radio" name="sex" value="女"> <br>
+        爱好：吃饭 <input type="checkbox" name="hobby"> 睡觉 <input type="checkbox" name="hobby"> <br>
+        <!-- name和value是每个表单元素都有的属性值主要给后台人员使用的 -->
+         <!-- 点击了提交按钮可以把表单或form里面的表单元素提交给后台服务器 -->
+        <input type="submit" value="免费注册"> <br>
+        <!-- 重置按钮可以还原表单元素初始的默认状态 -->
+        <input type="reset" value="重写"> <br>
+        <!-- 普通按钮button后期搭配js使用 -->
+        <input type="button" value="获取短信验证码"> <br>
+        <!-- file文件域 上传文件时使用 -->
+        上传图片：<input type="file">
+
+    </form>
+</body>
+</html>
